@@ -1,12 +1,11 @@
 #include <iostream>
 #include <cstring>
 #include <string>
-#include <stack>
  
 using namespace std;
 
 bool checker(const char * s, int counter = 0, int counterSquare = 0, int counterFigure = 0){
-    if ((counter || counterSquare || counterFigure) < 0) return false;
+    if ((counter < 0) || (counterSquare < 0) || (counterFigure < 0)) return false;
 
     for( ; *s; ++s)
         switch(*s){
