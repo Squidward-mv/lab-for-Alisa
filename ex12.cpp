@@ -51,7 +51,7 @@ int main(){
     
     const char * strBuf = str.c_str();
     
-    if (checker(strBuf)){  // сюда вписываешь интересующее выражение
+    if (checker(strBuf)){  
         cout << "Скобки расставлены верно" << endl;
     }
     else {
